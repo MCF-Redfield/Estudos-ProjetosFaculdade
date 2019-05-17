@@ -1,0 +1,12 @@
+package br.com.tchunaifashion.persistence.dao;
+
+import br.com.tchunaifashion.model.PedProd;
+
+/**
+ *
+ * @author Matheus Correia
+ */
+public interface InterfacePedProdDAO
+{
+    public void addPedProd(PedProd pedProd);
+}

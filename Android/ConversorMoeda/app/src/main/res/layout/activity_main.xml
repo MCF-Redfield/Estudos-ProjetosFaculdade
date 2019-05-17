@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="br.com.tchunaisoft.ListaI.ConversorMoeda.MainActivity" >
+
+    <TextView
+        android:id="@+id/DValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="@string/DValor" />
+
+    <EditText
+        android:id="@+id/Valor1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DValor"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/Converter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Valor1"
+        android:layout_marginTop="17dp"
+        android:text="@string/Converter" />
+
+    <TextView
+        android:id="@+id/para"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Converter"
+        android:layout_toRightOf="@+id/btMostrar"
+        android:text="@string/para" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Converter" />
+
+    <Spinner
+        android:id="@+id/Spinner01"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner1"
+        android:layout_alignTop="@+id/spinner1"
+        android:layout_toRightOf="@+id/btMostrar" />
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:onClick="mostrar"
+        android:text="@string/Converter" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btMostrar"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/Euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/Dolar"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="35dp"
+        android:text="@string/Euro" />
+
+    <TextView
+        android:id="@+id/Dolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Euro"
+        android:layout_alignLeft="@+id/spinner1"
+        android:layout_marginBottom="38dp"
+        android:text="@string/Dolar" />
+
+    <EditText
+        android:id="@+id/ValorDolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Dolar"
+        android:layout_alignBottom="@+id/Dolar"
+        android:layout_toRightOf="@+id/Converter"
+        android:ems="10"
+        android:hint="Cotação do Dolar"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ValorEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Euro"
+        android:layout_alignBottom="@+id/Euro"
+        android:layout_alignRight="@id/ValorDolar"
+        android:layout_toRightOf="@+id/Converter"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Cotação do Euro" />
+
+</RelativeLayout>

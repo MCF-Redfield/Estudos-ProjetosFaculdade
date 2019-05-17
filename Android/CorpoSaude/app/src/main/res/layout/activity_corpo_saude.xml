@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.corposaude.CorpoSaude" >
+    <!--android:background="@drawable/evolucao"-->
+ 
+
+    <Button
+        android:id="@+id/btcalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="83dp"
+        android:textColor="#000000"
+        android:text="@string/calculadora"
+         />
+
+    <Button
+        android:id="@+id/btficha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btcalculadora"
+        android:layout_alignRight="@+id/btcalculadora"
+        android:layout_below="@+id/btcalculadora"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        android:text="@string/ficha"
+         />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Corpo Saúde"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

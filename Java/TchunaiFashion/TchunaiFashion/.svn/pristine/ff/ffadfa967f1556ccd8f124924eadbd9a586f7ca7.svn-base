@@ -1,0 +1,349 @@
+
+.sacola{
+float:left;
+position: absolute;
+top: 70px;
+right: 100px;
+background-image: url('../img/icon-carrinho.png');
+width: 143px;/* Faz a largura ficar igual a da largura da imagem de exemplo */
+height: 38px;/* Faz a altura ficar igual a da altura da imagem de exemplo */
+  }
+
+.logo{
+	margin-top: 25px;
+
+}
+.menu-setores ul{
+  font-size: 15px;
+  }
+
+
+.menu-setores ul li{
+  display: inline;/*Dispondo os elementos da lista horizontalmente (linear)*/
+  margin-left: 20px;
+  }
+
+.menu-setores a{
+   color: #AA0D1F;
+   text-decoration: none;
+  }
+  
+.menu-setores a:hover{
+	color: red;
+	text-decoration: underline;
+}  
+
+body{
+  background: url('../img/bg-slide-topo.png') repeat-x;
+  margin: 0;
+  color: #333;
+  font-family: "Lucida Sans Unicode","Lucida Grande", sans-serif;
+}
+
+.container {
+  margin: 0 auto;/*0p/ deixar conteudo de header colado acima e auto para centralizá-lo automaticamente*/
+  width: 940px;
+  }
+  
+header {
+  position: relative;
+  }
+
+.menu-setores {
+ 
+  margin-top: 20px;
+  margin-left: 400px;/*posicionando à direita 'Sua Conta'...*/
+  position: relative;
+  bottom: 0;
+  right: 0;
+  }
+
+.busca,
+.menu-departamentos{
+  float: left;/*Posicionamento da Busca e do Menu flutuando a esquerda*/
+  background-color: rgba(172,13,32,1);/*#dcdcdc;*/
+  font-weight: bold;/*letras em negrito*/
+  text-transform: uppercase;/*todas letrs maiúsculas*/
+  margin-right: 10px;/*espaçamento à direita do Menu*/
+  width: 230px;/* |---Largura do Menu e Busca---|  */
+  }
+
+.menu-departamentos{/*é uma seção, tipo um subMenu*/
+  clear: left;/*posiciona o elemento flutuante menu-departamentos a esquerda*/
+  text-transform: uppercase;/*Todas as letras maiúsculas*/
+  margin-top: 10px;/*espaço da margem na parte superior*/
+  padding-bottom: 10px;/*distancia da parte inferior*/
+  }
+
+.item-menu{
+  text-decoration: none;
+  }
+.busca{
+  border-top-left-radius: 4px;/*borda de Busca supeiror esquerda*/
+  border-top-right-radius: 4px;/*borda de Busca supeiror direita*/
+  }
+
+.busca h2,
+.busca form,
+.menu-departamentos h2{
+  font-size: 16px;
+  margin: 10px;
+  color: #fff;
+  }
+
+.menu-departamentos li{
+  background-color: #B22533;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+  border-radius: 2px;
+  font-size: 16px;
+  }
+
+.menu-departamentos a{
+  color: #fff;/*cor da fonte dos elementos da lista*/
+  text-decoration: none;/*decoração ou efeito na escrita, no caso, nenhuma*/
+  }
+
+.busca input{
+  vertical-align: middle;/*posicionar o texto da busca merticalmete no meio*/
+  border-radius: 10px;/*borda no campo de busca com raio de 10px*/
+  }
+
+.busca input[type=search]{
+  width: 170px;/*largura do campo de busca*/
+  }
+
+  .loginheader{
+      width: 940px;
+      height: 115px;
+  }
+  /*Classe Login*/
+  .loginheader h1{
+      font-family: Oxygen;
+      font-weight: bold;
+      font-size: 30px;   
+      margin-left: 500px;
+      margin-top: 10px;
+      
+  }
+  
+  .loginheader .login{
+     width: 350px;
+     margin-left: 230px; 
+     
+  }
+  
+ legend.title{
+      color:red;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0 auto;
+  }
+  
+  .login span{
+   
+      font-weight: bold;
+      margin-left: 25px;
+  }
+  
+  .login #btnEntrar{
+      margin-left: 150px;
+      
+  }
+  
+  .cadastro{
+      margin-top: -115px;
+      float: right;
+      width: 350px;
+      border-left: 1px solid #ccc;
+      height: 115px;
+      
+  }
+  
+  .loginheader #btnCadastro{
+      margin-top: 35px;
+      margin-left: 135px;
+      
+  }
+  
+   .bts{
+     background-image: url(../img/bg-slide-bot.png);
+     color: white;
+ }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Início container footer*/  
+ 
+footer{
+  background-image: url(../img/fundo-rodape.png);
+  clear: both;
+  padding: 20px 0;
+  }
+
+.social li a{
+  height: 35px;/* tamanho da imagem */
+  width: 35px;
+  display: block;/* image replacement */
+  text-indent: -9999px;
+  }
+
+.social a[href*="facebook.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/facebook-dark.png) no-repeat;
+  background-size: 100%;
+  }
+
+.social a:hover[href*="facebook.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/facebook-active.png) no-repeat;
+  background-size: 100%;
+  }
+  
+.social a[href*="twitter.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/twitter-dark.png) no-repeat;
+  background-size: 100%;
+  }
+
+.social a:hover[href*="twitter.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/twitter-active.png) no-repeat;
+  background-size: 100%;
+  }
+  
+.social a[href*="plus.google.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/google-dark.png) no-repeat;
+  background-size: 100%;
+  }
+
+  .social a:hover[href*="plus.google.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/google-active.png) no-repeat;
+  background-size: 100%;
+  }
+  
+.social a[href*="tchunaifashion.tumblr.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/tumblr-dark.png) no-repeat;
+  background-size: 100%;
+  }  
+
+.social a:hover[href*="tchunaifashion.tumblr.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/tumblr-active.png) no-repeat;
+  background-size: 100%;
+  }  
+
+.social a[href*="instagram.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/instagram-dark.png) no-repeat;
+  background-size: 100%;
+  }  
+
+.social a:hover[href*="instagram.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/instagram-active.png) no-repeat;
+  background-size: 100%;
+  }
+  
+.social a[href*="pinterest.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/pinterest-dark.png) no-repeat;
+  background-size: 100%;
+  }    
+  
+.social a:hover[href*="pinterest.com"]{
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  background: transparent url(../img/pinterest-active.png) no-repeat;
+  background-size: 100%;
+  }
+
+  
+footer .container{
+  position: relative;
+  }
+
+.social{
+  position: absolute;
+  top: 12px;
+  right: 0;
+  }
+
+.social li{
+  float: left;
+  margin-left: 25px;
+  margin-top: 10px;
+  }
+
+.container p {
+float: top;
+color: #dcdcdc;
+
+}  
+  
+/*Fim container footer*/  
+  
+.menu-setores a:hover{/*efeito ao passar o mouse*/
+  color: #007dc6;
+  }
+
+.menu-setores a:active{/*efeito ao clicar sobre*/
+  color: #867dc6;
+  }
+
+.menu-departamentos ul li ul{
+  display: none;/*sublista permanece oculta*/
+  }
+
+.menu-departamentos ul li:hover ul{
+  display: block;/*exibe sublista ao passar o mouse*/
+  }
+
+.menu-departamentos ul li ul li{
+    background-color: #b24142;/*cor da sublista*/
+  }
+
+.menu-departamentos li li a:before{
+  content: '\272A';/*símbolo para o elemento da sublista*/
+  padding-right: 3px;/*espaçamento a direita do espaço destinado a opção da sublista*/
+  }
+
+  
+  

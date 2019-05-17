@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sobre a Mirror Fashion</title>
+		<link rel="stylesheet" href="tchunai_css/sobrecss.css">
+	</head>
+
+	<body>
+		<header class="container">
+	
+		<h1><img class="logo" src="img/logo.png" alt="Mirror Fashion"></h1>
+
+		<div class="sacola" >
+			<div style="font-weight:bold; font-family: Oxygen; font-size:12px; margin-left: 50px; margin-top: 1px;">
+				<a id="qtd-sacola" href="#" title="Minha Compra">0 Produtos</a>
+				<br />
+				<a rel="noindex nofollow" id="val-sacola" href="#" title="Minha Compra">R$ 0,00</a>
+			</div>
+		</div>
+
+		<nav class="menu-setores">
+		  <ul>
+		    <li><a href="index.html">Inicio</a></li>
+			<li><a href="#">Sua Conta</a></li>
+		    <li><a href="#">Lista de Desejos</a></li>
+		    <li><a href="#">Cartão Fidelidade</a></li>
+		    <li><a href="#">Ajuda</a></li>
+		  </ul>
+		</nav>
+
+		</header>
+
+		
+
+		
+		<h1>A Mirror Fashion</h1>
+	
+		<p>A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
+		Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
+		participação em 118 deles.
+		</p>
+		<!-- Direciona Jacarezinho ao GoogleMaps -->
+		<p>Nosso centro de distribuição fica em <a href="https://maps.google.com.br/?q=Jacarezinho">Jacarezinho, no Paraná</a>. De lá, saem 48 aviões que 
+		distribuem nossos produtos às casas do mundo todo. Nosso centro de distribuição:
+		</p>
+		
+		<figure id="centro-distribuicao">
+			<img src="img/centro-distribuicao.png">
+			<figcaption>Centro de Distribuição da Mirror Fashion</figcaption>
+		</figure>
+
+		<p>Compre suas roupas e acessórios na Mirror Fashion. Acesse <a href="index.html">nossa loja</a> ou entre em 
+		<a href="http://www.caelum.com.br/curso/wd43/#contato">contato</a> 
+		se tiver dúvidas. Conheça também nossa <!-- Linkando para os subtítulos--><a href="#história">história</a> 
+		e nossos <a href="#diferenciais">diferenciais</a>.
+		</p>
+		
+		<h2 id="história">História</h2>
+
+		<figure id="familia-pelho">
+			<img src="img/familia-pelho.jpg">
+			<figcaption>Família Pelho</figcaption>
+		</figure>
+
+		<p>
+		A fundação em 1932 ocorreu no momento da descoberta econônica do interior do Paraná. A 
+		<em>Família Pelho</em>, tradicional da região, investiu todas as suas economias nessa nova iniciativa, 
+		revolucionária para a época. O fundador <em>Eduardo Simões Pelho</em>, dotado de particular visão 
+		administrativa, guiou os negócios da empresa durante mais de 50 anos, muitos deles ao lado 
+		de seu filho <em>E. S. Pelho Filho</em>, atual CEO. O nome da empresa é inspirado no nome da família.
+		</p>
+		
+		<p>
+		O crescimento da empresa foi praticamente instantâneo. Nos primeiros 5 anos, já atendia 18 países. 
+		Bateu a marca de 100 países em apenas 15 anos de existência. Até hoje, já atendeu 740 milhões 
+		de usuários diferentes, em bilhões de diferentes pedidos.
+		</p>
+
+		<p>O crescimento em número de funcionários é também assombroso. Hoje, é a maior empregadora do 
+		Brasil, mas mesmo após apenas 5 anos de sua existência, já possuía 30 mil funcionários. Fora do 
+		Brasil, há 240 mil funcionários, além dos 890 mil brasileiros nas instalações de Jacarezinho e 
+		nos escritórios em todo país.
+		</p>
+
+		<p>Dada a importância econômica da empresa para o Brasil, a família Pelho já recebeu diversos prêmios, 
+		homenagens e condecorações. Todos os presidentes do Brasil já visitaram as instalações da Mirror 
+		Fashion, além de presidentes da União Européia, Ásia e o secretário-geral da ONU.
+		<p>
+<!--
+		<ul>
+		    <li>Primeiro item da lista</li>
+		    <li>
+		      Segundo item da lista:
+		      <ul>
+			<li>Primeiro item da lista aninhada</li>
+			<li>Segundo item da lista aninhada</li>
+		      </ul>
+		    </li>
+		    <li>Terceiro item da lista</li>
+		</ul>
+		
+		<ol>
+		    <li>Primeiro item da lista</li>
+		    <li>Segundo item da lista</li>
+		    <li>Terceiro item da lista</li>
+		    <li>Quarto item da lista</li>
+		    <li>Quinto item da lista</li>
+		</ol>
+
+		<dl>
+		    <dt>HTML</dt>
+		    <dd>
+		      HTML é a linguagem de marcação de textos utilizada para exibir textos como páginas na Internet.
+		    </dd>
+		    <dt>Navegador</dt>
+		    <dd>
+		      Navegador é o software que requisita um documento HTML através do protocolo HTTP e exibe seu conteúdo em uma janela.
+		    </dd>
+		</dl>
+-->
+
+		<h2 id="diferenciais">Diferenciais</h2>
+		 
+		    <ul>
+			<li>Menor preço do varejo, garantido</li>
+			<li>Se você achar uma loja mais barata, leva o produto de graça</li>
+			<li>Pague em reais, dólares, euros ou bitcoins</li>
+			<li>Todas as compras com frete grátis para o mundo todo</li>
+			<li>Maior comércio eletrônico de moda do mundo</li>
+			<li>Atendimento via telefone, email, chat, twitter, facebook, carta, fax e telegrama</li>
+			<li>Presente em 124 países</li>
+			<li>Mais de um milhão de funcionários em todo o mundo</li>
+		    </ul>
+
+<!--	
+		<p>
+		  Visite o site da <a href="http://www.caelum.com.br">Caelum</a>
+		</p>
+
+		<p>Mais informações <a href="#info">aqui</a>.</p>
+		<p>Conteúdo da página...</p>
+
+		<h2 id="info">Mais informações sobre o assunto:</h2>
+		<p>Informações...</p>
+		
+		<a href="http://www.caelum.com.br/curso/wd43/#contato">
+		Entre em contato sobre o curso
+		</a>
+-->
+		 <footer>
+	<div class="container">
+	  <img src="img/logo-rodape.png" alt="Logo Mirror Fashion" style="width:80px; height: 60px;">
+	    <p>&copy; Copyright Tchunai Fashion</p>
+	  <ul class="social">
+	    <li><a href="http://facebook.com/tchunaifashion">Facebook</a></li>
+	    <li><a href="http://twitter.com/tchunaifashion">Twitter</a></li>
+	    <li><a href="http://plus.google.com/tchunaifashion">Google+</a></li>
+		<li><a href="http://tchunaifashion.tumblr.com">Tumblr</a></li>
+		<li><a href="https://instagram.com/tchunaifashion">Instagram</a></li>
+		<li><a href="https://www.pinterest.com/tchunaifashion">Pinterest</a></li>
+	  </ul>
+	</div>
+     </footer>
+</body>
+
+</html>
+

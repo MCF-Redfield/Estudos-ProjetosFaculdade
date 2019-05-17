@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Conversor2</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="tonKg">Tonelada p/ Kg</string>
+    <string name="kgTon">Kg p/ Tonelada</string>
+    <string name="kmMetro">Km p/ Metros</string>
+    <string name="metroKm">Metros p/ Km</string>
+    <string name="metroAcre">M² p/ Acre</string>
+    <string name="acreMetro">Acre p/ M²</string>
+</resources>

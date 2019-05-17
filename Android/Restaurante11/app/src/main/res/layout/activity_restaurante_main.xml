@@ -1,0 +1,144 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll1"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cardápio Tchunai"
+            android:id="@+id/textView"
+            android:textSize="35dp"
+            android:layout_gravity="center_horizontal" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lasanha\nR$35,49"
+            android:textAlignment="textEnd"
+            android:id="@+id/lasanha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arLasanha"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bobó de Frango\nR$51,98"
+            android:id="@+id/bobo"
+            android:layout_below="@+id/lasanha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arBobo"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Picanha\nR$43,99"
+            android:id="@+id/picanha"
+            android:layout_below="@+id/bobo"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arPicanha"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spaghetti\nR$21,49"
+            android:id="@+id/macarrao"
+            android:layout_below="@+id/picanha"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arSpaghetti"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Filé de Porco\nR$25,98"
+            android:id="@+id/fille"
+            android:layout_below="@+id/macarrao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arFille"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peixe Grelhado\nR$27,99"
+            android:id="@+id/peixe"
+            android:layout_below="@+id/macarrao"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arPeixe"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Omelete à Moda\nR$14,47"
+            android:id="@+id/omelete"
+            android:layout_below="@+id/peixe"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:onClick="arOmelete"
+            android:layout_marginTop="26dp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Pedido"
+            android:layout_marginTop="16dp"
+            android:id="@+id/qwe"
+            android:textSize="20dp"
+            android:textIsSelectable="false" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/ped"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal" />
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/total"
+            android:text="Total a pagar: R$0,00"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enviar Pedido"
+            android:id="@+id/sendPed"
+            android:onClick="mandaPed"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivityWalkaux">
+
+    <item android:id="@+id/listWalk"
+        android:title="Listar Caminhadas"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+    <!--item android:id="@+id/deletar"
+        android:title="Deletar"
+        android:orderInCategory="100"
+        app:showAsAction="never" / -->
+
+    <item android:id="@+id/graficar"
+        android:title="Gráfico Walk"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+
+</menu>

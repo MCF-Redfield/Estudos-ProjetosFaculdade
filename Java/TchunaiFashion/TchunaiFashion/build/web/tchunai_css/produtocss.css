@@ -1,0 +1,207 @@
+@media (min--moz-device-pixel-ratio:0) {/*para validar o uso do max-width: 100%, a largura*/
+	fieldset {
+		display: table-column;
+		}
+	}
+
+.cores label:after {/*criação das bolas q representaram as cores*/
+  content: '';/*conteúdo da bola de seleção de cor*/
+  display: block;
+  border-radius: 50%;/*borda do block*/
+  width: 50px;/*largura*/
+  height: 50px;/*comprimento*/
+  border: 6px solid rgba(0,0,0,0);
+	transition: 1s;
+	}
+
+.cores label:hover:after {
+	border: 6px solid rgba(0,0,0,0.1);
+	}
+
+label[for=verde]:after {
+  background-color: #33CC66;/*definindo a cor da bola verde*/
+  left: 0;/*posicionamento à esquerda*/
+	}
+
+label[for=rosa]:after {
+  background-color: #FF6666;/*definindo a cor da bola rosa*/
+  left: 60px;/*posicionamento à esquerda*/
+	}
+
+label[for=azul]:after {
+  background-color: #6666FF;/*definindo a cor da bola azul*/
+  left: 120px;/*posicionamento à esquerda*/
+	}
+
+.cores input:checked + label:after {/*destaca a borda da bola da cor selecionada*/
+  border: 6px solid rgba(0,0,0,0.3);
+  }
+
+.cores label:after {/*controla o destaque da bola da cor escolhida, evitando passar seu limite*/
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  }
+
+.cores input[type=radio] {
+	display: none;/*esconder botão de rádio*/
+	}
+
+.cores input:not(:checked) + label img {/*oculta a imagem das roupas que não estão com a cor selecionada*/
+	display: none;
+	}
+
+.cores label:after {/*posicionamento dos seletores das cores*/
+	position: absolute;
+	top: 30px;/*distacia da parte superior*/
+	}
+
+.cores {
+	position: relative;
+	padding-top: 80px;
+	}
+
+max-width: .cores label img {
+	display: block;
+	max-width: 100%;
+	}
+
+.produto {
+    	color: #333;/*cor da escrita*/
+	line-height: 2.3;/*espaço entre as linhas*/
+	margin-top: -380px;
+	}
+
+.produto h1 {
+	font-size: 1.8em;/*tamanho fonte do título do produto*/
+	font-weight: bold;/*negrito*/
+	}
+
+.produto p {
+	font-size: 1.2em;/*tamanho fonte do preço*/
+	font-style: italic;/*itálico*/
+	margin-bottom: 1em;
+        color: #b0225c;
+	}
+
+.produto legend {
+	display: block;
+	font: bold 0.9em/2.5 Arial;
+	text-transform: uppercase;/*todas letras maiúsculas*/
+	}
+
+.comprar {
+	background: rgb(172,13,52);
+	border: none;
+	color: #fff;
+	font-size: 1.0em;
+	text-transform: uppercase;
+	box-shadow: 0 1px 3px #777;
+	display: block;
+	padding: 0.5em 1em;
+	margin: 1em 0;
+	}
+
+@media (min-width: 630px) {
+	.produto {
+		position: relative;
+		padding-left: 40%;
+		}
+	
+	.cores {
+		position: static;
+		padding: 0;
+		}
+
+	.cores label img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.cores label:after {
+		position: static;
+		float: left;
+		}
+
+	.cores label img {
+		max-width: 35%;
+		max-height: 100%;
+		}
+
+	.produto {
+		font-size: 1.2em;/*tamanho da fonte da descricao*/
+		}
+
+	.cores label:after {
+		margin-right: 10px;/*espaço entre os seletores de cor*/
+		}
+	
+	fieldset {
+		display: inline-block;/*Dispõe os fieldsets em blocos*/
+		vertical-align: top;
+		margin: 1em 0;
+		min-width: 200px;
+		width: 45%;
+	}
+}
+
+.detalhes {
+	padding: 2em 0;/*espaço da parte superior e inferior da descrição do produto*/
+	padding-top: 120px;
+}
+
+.detalhes h2 {
+	font-size: 1.5em;/*tamanho da fonte do título*/
+	line-height: 2;/*espaço entre título e texto*/
+	}
+
+.detalhes p {
+	margin: 1em 0;
+	font-size: 1em;
+	line-height: 1.5;
+	max-width: 36em;
+        color: rgba(0,0,0,0.8);
+	}
+
+@media (min-width: 500px) {
+	.detalhes {
+		font-size: 1.2em;	
+		}
+	}
+
+table {
+	border-spacing: 0.2em;
+	border-collapse: separate;
+	}
+
+thead {
+	background-color: #999;/*cor do título da coluna*/
+	}
+
+thead th {
+	font-weight: bold;/*negrito título*/
+	padding: 0.3em 1em;
+	text-align: center;/*alinhado ao centro*/
+	}
+	
+td {
+	padding: 0.3em;/*espaço entre as linhas*/
+	}
+
+tr:nth-child(2n) {/*altera cor de fundo de elementos pares*/
+	background-color: #ccc;
+	}
+
+td:first-child {
+	font-style: italic;/*itálico*/
+	}
+
+.produto-back {
+	background-color: #F2F2F2;/*cor de fundo*/
+	margin-top: 1em;
+	border-top: 2px solid #ccc;/*estilo da borda*/
+	}
+
+.cores label img {
+	border: 2px solid #ccc;/*estilo borda produto*/
+	}

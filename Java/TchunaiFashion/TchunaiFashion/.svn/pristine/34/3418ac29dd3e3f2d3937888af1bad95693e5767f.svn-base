@@ -1,0 +1,187 @@
+package br.com.tchunaifashion.persistence.dao;
+
+import br.com.tchunaifashion.model.Cliente;
+import br.com.tchunaifashion.persistence.fabrica.ConnectionFactory;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**Classe que implementa os métodos DAO de Anunciante
+ * UC05, UC06, UC07, UC08
+ * 
+ * @author Carlos da Costa Oliveira
+ * @since Marco 3
+ * @version 1.0
+ */
+public class ClienteDAO {
+
+    Connection connection;//Variável conexão com BD
+
+    /**Construtor inicializa conexão BD
+     * 
+     */
+    public ClienteDAO() {
+        this.connection = new ConnectionFactory().getConnection();
+    }
+
+    /**Método que autentica usuario e senha 
+     * UC05, UC06, UC07, UC08. 
+     * @param anunciante Anunciante
+     * @since Marco 3
+     * @return Boolean
+     
+    @Override
+    public boolean autenticacao(Anunciante anunciante) {
+
+        PreparedStatement pst;
+        ResultSet rs;
+
+        String sql = "select * from anunciante where cpf= ? and senha = ?";
+
+        try {
+            pst = connection.prepareStatement(sql);
+            pst.setString(1, anunciante.getCpf());
+            pst.setString(2, anunciante.getSenha());
+            rs = pst.executeQuery();
+            
+            if (rs.next()) {
+                return true;
+            } else {
+                return false;
+            }
+
+        } catch (SQLException error) {
+
+        }
+        return false;
+    }
+*/
+    /**Método que adiciona Cliente ao BD
+     * 
+     * @param cliente Cliente
+     * @since Marco 3
+     */
+  
+    public void adicionar(Cliente cliente) {
+        String sql = "INSERT INTO cliente" + "(cpf,nomeCli,email,senha,fone,numero,cidade,cep,estado,endereco,bairro,complemento)" + "VALUES (?,?,?,?,?,?,?,?,?,?,?,?)";
+
+        try {
+            try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+                stmt.setString(1, cliente.getCpf());
+                stmt.setString(2, cliente.getNome());
+                stmt.setString(3, cliente.getEmail());
+                stmt.setString(4, cliente.getSenha());
+                stmt.setString(5, cliente.getTelefone());
+                stmt.setString(6, cliente.getNumero());
+                stmt.setString(7, cliente.getCidade());
+                stmt.setString(8, cliente.getCep());
+                stmt.setString(9, cliente.getEstado());
+                stmt.setString(10, cliente.getEndereco());
+                stmt.setString(11, cliente.getBairro());
+                stmt.setString(12, cliente.getComplemento());
+                stmt.execute();
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+    
+    /*
+    
+    
+    
+    
+    
+    
+    
+    
+   
+    
+    public void remover(Cliente cliente) {
+        String sql = "DELETE FROM cliente WHERE cpf LIKE ? ";
+
+        try {
+            try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+                stmt.setString(1, cliente.getCpf());
+                stmt.execute();
+            }
+
+        } catch (SQLException e) {
+            Logger.getLogger(ClienteDAO.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+    
+   
+    public List<Anunciante> getLista() {
+        String sql = "SELECT * FROM anunciante";
+
+        try {
+            List<Anunciante> listaAnunciante = new ArrayList<>();
+            try (
+                    PreparedStatement stmt = connection.prepareStatement(sql);
+                    ResultSet rs = stmt.executeQuery()) {
+
+                while (rs.next()) {
+                    Anunciante anunciante = new Anunciante();
+                    anunciante.setCpf(rs.getString("cpf"));
+                    anunciante.setNome(rs.getString("nome"));
+                    anunciante.setSenha(rs.getString("senha"));
+
+                    listaAnunciante.add(anunciante);
+
+                }
+            }
+            return listaAnunciante;
+
+        } catch (SQLException e) {
+            Logger.getLogger(AnuncianteDAO.class.getName()).log(Level.SEVERE, null, e);
+        }
+        return null;
+    }
+
+    
+    public void alterar(Anunciante anunciante) {
+        String sql = "UPDATE anunciante SET cpf=?, nome=?, senha=? WHERE cpf=?";
+
+        try {
+            try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+                stmt.setString(1, anunciante.getCpf());
+                stmt.setString(2, anunciante.getNome());
+                stmt.setString(3, anunciante.getSenha());
+                stmt.setString(4, anunciante.getCpf());
+
+                stmt.execute();
+                stmt.close();
+                
+            }
+        } catch (SQLException e) {
+            Logger.getLogger(AnuncianteDAO.class.getName()).log(Level.SEVERE, null, e);
+        }
+    }
+
+    public Anunciante buscarPorCPF(String cpf) {
+        String sql = "SELECT * FROM anunciante WHERE cpf like '" + cpf + "'";
+        Anunciante anunc = new Anunciante();
+
+        try {
+            try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+                ResultSet rs = stmt.executeQuery();
+
+                while (rs.next()) {
+                    anunc.setCpf(rs.getString("cpf"));
+                    anunc.setNome(rs.getString("nome"));
+                    anunc.setSenha(rs.getString("senha"));
+                }
+                return anunc;
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(AnuncianteDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+*/
+}

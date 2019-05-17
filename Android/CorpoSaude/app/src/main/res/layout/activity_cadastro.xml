@@ -1,0 +1,114 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.fichadetreino.Cadastro" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome da nova ficha:" />
+
+        <EditText
+            android:id="@+id/et_nova_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="#00c0c0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome do exercício:" />
+
+        <EditText
+            android:id="@+id/et_exercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Séries:" />
+
+        <EditText
+            android:id="@+id/et_series"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Repetições:" />
+
+        <EditText
+            android:id="@+id/et_repeticoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Peso:" />
+
+        <EditText
+            android:id="@+id/et_peso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_adiciona_exercicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="adicionarExercicio"
+            android:text="Adicionar Exercício"
+            android:background="#000"
+            android:textColor="#FFF" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="#00c0c0" />
+
+        <TableLayout
+            android:id="@+id/table_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:stretchColumns="*"
+            android:shrinkColumns="*" >
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_margin="5dp"
+            android:background="#00c0c0" />
+
+        <Button
+            android:id="@+id/bt_salva_lista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="salvarFicha"
+            android:text="Salvar Ficha"
+            android:background="#000"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+</ScrollView>

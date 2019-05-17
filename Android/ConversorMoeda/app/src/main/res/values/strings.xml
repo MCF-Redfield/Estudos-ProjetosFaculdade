@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ConversorMoeda</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="DValor">Digite o valor a ser convertido:</string>
+    <string name="Converter">Converter</string>
+    <string name="para">Para:</string>
+    <string name="Real">Real:</string>
+    <string name="Dolar">Dolar:</string>
+    <string name="Euro">Euro:</string>
+
+</resources>

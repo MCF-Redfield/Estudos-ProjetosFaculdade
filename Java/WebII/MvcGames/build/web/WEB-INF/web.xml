@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>DistribuidoraServlet</servlet-name>
+        <servlet-class>controller.DistribuidoraServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DesenvolvedoraServlet</servlet-name>
+        <servlet-class>controller.DesenvolvedoraServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DistribuidoraServlet</servlet-name>
+        <url-pattern>/DistribuidoraServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DesenvolvedoraServlet</servlet-name>
+        <url-pattern>/DesenvolvedoraServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

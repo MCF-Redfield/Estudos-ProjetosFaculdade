@@ -1,0 +1,46 @@
+package br.com.tchunaifashion.persistence.dao;
+
+import br.com.tchunaifashion.model.PedProd;
+import br.com.tchunaifashion.persistence.fabrica.ConnectionFactory;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+/**
+ *
+ * @author Matheus Correia
+ */
+public class PedProdDAO implements InterfacePedProdDAO
+{
+
+    Connection connection;//Variável conexão com BD
+
+    /**
+     * Construtor inicializa conexão BD
+     *
+     */
+    public PedProdDAO() {
+        this.connection = new ConnectionFactory().getConnection();
+    }
+
+    @Override
+    public void addPedProd(PedProd pedProd)
+    {
+        String sql = "INSERT INTO pedProd" + "(idPed2,idProd2,tamanho)" + "VALUES (?,?,?)";
+
+        try {
+            try (PreparedStatement stmt = connection.prepareStatement(sql)) {
+                stmt.setInt(1, pedProd.getPedido().getIdPed());
+                stmt.setInt(2, pedProd.getProduto().getIdProd());
+                stmt.setString(3, pedProd.getProduto().getTamanho());
+                stmt.execute();
+
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(PedidoDAO.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+}

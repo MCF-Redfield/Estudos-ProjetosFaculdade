@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.corposaude"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.corposaude.CorpoSaude"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.corposaude.Calculadora"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.corposaude.Cadastro" >
+        </activity>
+        <activity android:name="com.corposaude.Detalhamento" >
+        </activity>
+        <activity android:name="com.corposaude.Ficha" >
+        </activity>
+        <activity android:name="com.corposaude.FichaNova" >
+        </activity>
+        <activity android:name="com.corposaude.CalculadoraIMC" >
+        </activity>
+        <activity android:name="com.corposaude.Tabela" >
+        </activity>
+        <activity android:name="com.corposaude.Fichas" >
+        </activity>
+        <activity android:name="com.corposaude.FichaEctomorfo" >
+        </activity>
+        <activity android:name="com.corposaude.FichaMesomorfo" >
+        </activity>
+        <activity android:name="com.corposaude.FichaEndomorfo" >
+        </activity>
+        <activity android:name="com.corposaude.SobreCorpo" >
+        </activity>
+        <activity android:name="com.corposaude.SobreCorpoEcto" >
+        </activity>
+        <activity android:name="com.corposaude.SobreCorpoMeso" >
+        </activity>
+        <activity android:name="com.corposaude.SobreCorpoEndo" >
+        </activity>
+    </application>
+
+</manifest>

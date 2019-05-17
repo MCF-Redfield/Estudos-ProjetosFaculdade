@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.corposaude"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".CorpoSaude"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Calculadora"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+           
+     </activity>
+     <activity
+            android:name=".Cadastro"
+            >
+           
+     </activity>
+     <activity
+            android:name=".Detalhamento"
+            >
+        </activity>
+     <activity
+            android:name=".Ficha"
+     >
+           
+     </activity>
+     <activity
+            android:name=".FichaNova"
+          >
+           
+     </activity>
+     <activity
+            android:name=".CalculadoraIMC"
+         >
+           
+     </activity>
+     <activity
+            android:name=".Tabela"
+           >
+           
+     </activity>
+     <activity
+            android:name=".Fichas"
+         >
+           
+     </activity>
+
+         <activity
+            android:name=".FichaEctomorfo"
+      >
+           
+     </activity>
+     
+    <activity
+            android:name=".FichaMesomorfo"
+      >
+           
+     </activity>
+        <activity
+            android:name=".FichaEndomorfo"
+>
+           
+     </activity>
+     <activity
+            android:name=".SobreCorpo"
+>
+           
+     </activity>
+         <activity
+            android:name=".SobreCorpoEcto"
+>
+        </activity>
+      <activity
+            android:name=".SobreCorpoMeso"
+>
+           
+     </activity>
+     <activity
+            android:name=".SobreCorpoEndo"
+            >
+           
+     </activity>
+     
+    </application>
+
+</manifest>

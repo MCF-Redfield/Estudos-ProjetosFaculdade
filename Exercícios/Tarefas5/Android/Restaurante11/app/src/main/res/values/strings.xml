@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Restaurante11</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_caixa_main">CaixaMainActivity</string>
+    <string name="title_activity_caixa">CaixaActivity</string>
+    <string name="title_activity_fecha_caixa">FechaCaixaActivity</string>
+</resources>

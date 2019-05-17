@@ -1,0 +1,38 @@
+
+p{
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+
+#resultado{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+
+#result{
+    background-color: #ccffcc;
+    padding: 15px 15px;
+    border: 10px #33cc00 inset;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    background-color: #ccffcc;
+    padding: 10px 10px;
+    border: 5px #a4e271 solid;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+}
+
+a:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #00cc66;
+    border: 5px #33cc00 solid;
+}

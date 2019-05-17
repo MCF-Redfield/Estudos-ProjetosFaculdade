@@ -1,0 +1,13 @@
+package br.com.tchunaifashion.persistence.dao;
+
+import br.com.tchunaifashion.model.Pedido;
+
+/**
+ *
+ * @author Matheus Correia
+ */
+public interface InterfacePedidoDAO
+{
+    public void addPedido(Pedido pedido);
+    public Pedido pedMaisRecente();
+}

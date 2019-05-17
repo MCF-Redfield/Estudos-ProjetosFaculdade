@@ -1,0 +1,137 @@
+<%-- 
+    Document   : produto
+    Created on : 24/07/2015, 20:02:11
+    Author     : Usuario
+--%>
+
+<%@page import="br.com.tchunaifashion.model.Produto"%>
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Produto da Tchunai Fashion</title>
+        <link rel="stylesheet" href="tchunai_css/reset.css">
+        <link rel="stylesheet" href="tchunai_css/indexcss.css">
+        <link rel="stylesheet" href="tchunai_css/mobile.css" media="(max-width: 939px)">
+        <link rel="stylesheet" href="tchunai_css/produtocss.css">
+    </head>
+    
+    <body>
+        <header class="container">
+            <h1>
+                <img class="logo" src="img/logo.png" alt="Mirror Fashion">
+            </h1>
+            <div class="sacola">
+                <div style="font-weight:bold; font-family: Oxygen; font-size:12px; margin-left: 50px; margin-top: 1px;">
+                    <a id="qtd-sacola" href="#" title="Minha Compra">0 Produtos</a>
+                    <br>
+                    <a rel="noindex nofollow" id="val-sacola" href="#" title="Minha Compra">R$ 0,00</a>
+                </div>
+            </div>
+            <nav class="menu-setores">
+                <ul>
+                    <li>
+                        <a href="#">Sua Conta</a>
+                    </li>
+                    <li>
+                        <a href="#">Lista de Desejos</a>
+                    </li>
+                    <li>
+                        <a href="#">Cartão Fidelidade</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Ajuda</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        
+        <%
+            HttpSession prodSessionRecebe = request.getSession();
+         Produto prod = (Produto) prodSessionRecebe.getAttribute("prod");;
+        
+        %>
+        <div class="produto-back">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="<%=prod.getImagem()%>" class="img-responsive">
+                        
+                        
+                <div class="produto">
+                    <h1><%=prod.getNomeProd()%></h1>
+                    <p>por apenas R$ <%=prod.getPreco()%></p>
+                    <form action="checkout.php" method="POST">
+                        
+                        Tamanho:
+                        <select name="Tamanho">
+                            <option>P</option>
+                            <option>M</option>
+                            <option>G</option>
+                            <option>GG</option>
+                        </select>
+                        
+                        <input type="submit" class="comprar" value="Comprar">
+                    </form>
+                </div>
+                        
+                        
+                    </div>
+                </div>
+                
+                <div class="detalhes">
+                    <h2>Detalhes do produto</h2>
+                    <p><%=prod.getDescricao()%>.</p>
+                    <!--table>
+                        <thead>
+                            <tr>
+                                <th>Característica</th>
+                                <th>Detalhe</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Modelo</td>
+                                <td>Cardigã 7845</td>
+                            </tr>
+                            <tr>
+                                <td>Material</td>
+                                <td>Algodão e poliester</td>
+                            </tr>
+                            <tr>
+                                <td>Cores</td>
+                                <td>Azul, Rosa e Verde</td>
+                            </tr>
+                            <tr>
+                                <td>Lavagem</td>
+                                <td>Lavar a mão</td>
+                            </tr>
+                        </tbody>
+                    </table-->
+                </div>
+            </div>
+        </div>
+        <footer>
+	<div class="container">
+	  <img src="img/logo-rodape.png" alt="Logo Mirror Fashion" style="width:80px; height: 60px;">
+	    <p>&copy; Copyright Tchunai Fashion</p>
+	  <ul class="social">
+	    <li><a href="http://facebook.com/tchunaifashion">Facebook</a></li>
+	    <li><a href="http://twitter.com/tchunaifashion">Twitter</a></li>
+	    <li><a href="http://plus.google.com/tchunaifashion">Google+</a></li>
+            <li><a href="http://tchunaifashion.tumblr.com">Tumblr</a></li>
+            <li><a href="https://instagram.com/tchunaifashion">Instagram</a></li>
+            <li><a href="https://www.pinterest.com/tchunaifashion">Pinterest</a></li>
+	  </ul>
+	</div>
+     </footer>
+    </body>
+
+</html>
